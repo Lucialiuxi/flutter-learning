@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'customText.dart';
+// import 'customText.dart';
+import 'containerAndText.dart';
 
 class CustomApp extends StatelessWidget {
   // const name({Key key}) : super(key: key);
@@ -24,7 +25,7 @@ class CustomApp extends StatelessWidget {
             )
           ],
         ),
-        body:  CustomText(),
+        body:  ContainerAndText(),
         ),
     );
   }
