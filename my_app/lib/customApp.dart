@@ -1,7 +1,8 @@
 
 import 'package:flutter/material.dart';
 // import 'customText.dart';
-import 'containerAndText.dart';
+// import 'containerAndText.dart';
+import 'imageExample.dart';
 
 class CustomApp extends StatelessWidget {
   // const name({Key key}) : super(key: key);
@@ -25,7 +26,8 @@ class CustomApp extends StatelessWidget {
             )
           ],
         ),
-        body:  ContainerAndText(),
+        // body:  ContainerAndText(),
+        body: ImageExample(),
         ),
     );
   }
