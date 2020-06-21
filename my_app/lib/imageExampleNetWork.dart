@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // //显示图片
-// class ImageExample extends StatelessWidget {
+// class ImageExampleNetWork extends StatelessWidget {
 //   @override
 //   Widget build(BuildContext context) {
 //     return Container(
@@ -26,7 +26,7 @@ import 'package:flutter/material.dart';
 // }
 
 // 设置背景图
-// class ImageExample extends StatelessWidget {
+// class ImageExampleNetWork extends StatelessWidget {
 //   @override
 //   Widget build(BuildContext context) {
 //     return Container(
@@ -46,7 +46,7 @@ import 'package:flutter/material.dart';
 
 
 // ClipOval按照图片形状，自适应处理成圆形或者椭圆形
-class ImageExample extends StatelessWidget {
+class ImageExampleNetWork extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
