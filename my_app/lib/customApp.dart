@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 // import 'imageExampleNetWork.dart';
 // import 'imageExampleAsset.dart';
 // import 'listView/listViewExample7.dart';
-import 'gridView/gridViewexample2.dart';
+import 'gridView/GridViewExample3.dart';
 
 class CustomApp extends StatelessWidget {
   // const name({Key key}) : super(key: key);
@@ -32,7 +32,7 @@ class CustomApp extends StatelessWidget {
         // body: ImageExampleNetWork(),
         // body: ImageExampleAsset(),
         // body: ListViewExample7(),
-        body: GridViewExample2(),
+        body: GridViewExample3(),
       ),
     );
   }
