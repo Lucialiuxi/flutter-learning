@@ -3,13 +3,8 @@ import 'package:flutter/material.dart';
 // import 'containerAndText.dart';
 // import 'imageExampleNetWork.dart';
 // import 'imageExampleAsset.dart';
-// import 'listView/listViewExample1.dart';
-// import 'listView/listViewExample2.dart';
-// import 'listView/listViewExample3.dart';
-// import 'listView/listViewExample4.dart';
-// import 'listView/listViewExample5.dart';
-// import 'listView/listViewExample6.dart';
-import 'listView/listViewExample7.dart';
+// import 'listView/listViewExample7.dart';
+import 'gridView/gridViewexample2.dart';
 
 class CustomApp extends StatelessWidget {
   // const name({Key key}) : super(key: key);
@@ -36,11 +31,8 @@ class CustomApp extends StatelessWidget {
         // body:  ContainerAndText(),
         // body: ImageExampleNetWork(),
         // body: ImageExampleAsset(),
-        // body: ListViewExample1(),
-        // body: ListViewExample4(),
-        // body: ListViewExample5(),
-        // body: ListViewExample6(),
-        body: ListViewExample7(),
+        // body: ListViewExample7(),
+        body: GridViewExample2(),
       ),
     );
   }
