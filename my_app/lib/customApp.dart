@@ -1,16 +1,15 @@
-
 import 'package:flutter/material.dart';
 // import 'customText.dart';
 // import 'containerAndText.dart';
 // import 'imageExampleNetWork.dart';
 // import 'imageExampleAsset.dart';
-// import 'listViewExample1.dart';
-// import 'listViewExample2.dart';
-// import 'listViewExample3.dart';
-// import 'listViewExample4.dart';
-// import 'listViewExample5.dart';
-// import 'listViewExample6.dart';
-import 'listViewExample7.dart';
+// import 'listView/listViewExample1.dart';
+// import 'listView/listViewExample2.dart';
+// import 'listView/listViewExample3.dart';
+// import 'listView/listViewExample4.dart';
+// import 'listView/listViewExample5.dart';
+// import 'listView/listViewExample6.dart';
+import 'listView/listViewExample7.dart';
 
 class CustomApp extends StatelessWidget {
   // const name({Key key}) : super(key: key);
@@ -42,7 +41,7 @@ class CustomApp extends StatelessWidget {
         // body: ListViewExample5(),
         // body: ListViewExample6(),
         body: ListViewExample7(),
-        ),
+      ),
     );
   }
 }
