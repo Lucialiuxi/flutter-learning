@@ -40,8 +40,8 @@ class GridViewExample3 extends StatelessWidget {
         mainAxisSpacing: 20, // 垂直子Widget之间的间距
         childAspectRatio: 1.0, // 子Widget的宽高比例
       ),
-      itemCount: listData.length,
-      itemBuilder: this._getData,
+      itemCount: listData.length, // 必要属性 子Widget个数
+      itemBuilder: this._getData, // 必要属性
     );
   }
 }
