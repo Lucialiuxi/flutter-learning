@@ -8,7 +8,9 @@ import 'package:flutter/material.dart';
 // import 'row/rowExample1.dart';
 // import 'row/expandExample.dart';
 // import 'row/combineExample.dart';
-import 'stack/four.dart';
+// import 'stack/four.dart';
+// import 'aspectRatio/two.dart';
+import 'card/one.dart';
 
 class CustomApp extends StatelessWidget {
   // const name({Key key}) : super(key: key);
@@ -39,7 +41,9 @@ class CustomApp extends StatelessWidget {
         // body: GridViewExample3(),
         // body: PaddingExample1(),
         // body: CombineExample(),
-        body: StackExample4(),
+        // body: StackExample4(),
+        // body: AspectRatioExample2(),
+        body: CardExample1(),
       ),
     );
   }

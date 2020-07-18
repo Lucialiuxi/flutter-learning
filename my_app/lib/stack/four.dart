@@ -8,7 +8,13 @@ class StackExample4 extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           Positioned(
-            child: Image.network(listData[index]['imageUrl']),
+            child: AspectRatio(
+              aspectRatio: 2.0 / 1.0,
+              child: Image.network(
+                listData[index]['imageUrl'],
+                fit: BoxFit.cover,
+              ),
+            ),
           ),
           Positioned(
             top: 20,
