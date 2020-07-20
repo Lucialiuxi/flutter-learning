@@ -7,9 +7,24 @@ class CardExample2 extends StatelessWidget {
     return Column(
       children: <Widget>[
         AspectRatio(
-          aspectRatio: 20 / 13,
-          child: Image.network(listData[index]['imageUrl']),
-        )
+          aspectRatio: 16 / 9,
+          child: Image.network(
+            listData[index]['imageUrl'],
+            fit: BoxFit.cover,
+          ),
+        ),
+        ListTile(
+          leading: ClipOval(
+            child: Image.network(
+              listData[index]['imageUrl'],
+              height: 30,
+              width: 30,
+              fit: BoxFit.cover,
+            ),
+          ),
+          title: Text(listData[index]['title']),
+          subtitle: Text(listData[index]['author']),
+        ),
       ],
     );
   }
