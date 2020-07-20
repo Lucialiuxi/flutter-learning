@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../consts/personInformation.dart';
 
+// 显示人员信息的卡片
 class CardExample1 extends StatelessWidget {
   Widget _getListData(context, index) {
     var tel = personInformation[index]['tel'];
