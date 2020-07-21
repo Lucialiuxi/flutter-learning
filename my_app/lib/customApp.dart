@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-// import 'customText.dart';
-// import 'containerAndText.dart';
-// import 'imageExampleNetWork.dart';
-// import 'imageExampleAsset.dart';
+// import 'text/containerAndText.dart';
+// import 'text/customText.dart';
+// import 'image/imageExampleNetWork.dart';
+// import 'image/imageExampleAsset.dart';
 // import 'listView/listViewExample7.dart';
 // import 'padding/paddingExample1.dart';
 // import 'row/rowExample1.dart';
