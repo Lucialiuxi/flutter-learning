@@ -28,6 +28,9 @@ class _BottomNavigationBar1State extends State<BottomNavigationBar1> {
               print(index);
             });
           },
+          iconSize: 40,
+          fixedColor: Colors.greenAccent,
+          // type: BottomNavigationBarType.shifting,
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
