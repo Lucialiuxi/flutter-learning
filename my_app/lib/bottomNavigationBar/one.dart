@@ -17,6 +17,10 @@ class HomeComponent extends StatelessWidget {
         ),
         body: Text('body区域'),
         bottomNavigationBar: BottomNavigationBar(
+          currentIndex: 2,
+          onTap: (int index) {
+            print(index);
+          },
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
