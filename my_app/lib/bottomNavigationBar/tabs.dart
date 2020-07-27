@@ -17,6 +17,10 @@ class _TabsState extends State<Tabs> {
     HomePageInTab(),
     MessagePageInTab(),
     PersonalCenterPageInTab(),
+    Text('1111'),
+    Text('2222'),
+    Text('3333'),
+    Text('4444'),
   ];
 
   @override
@@ -37,9 +41,9 @@ class _TabsState extends State<Tabs> {
               print(index);
             });
           },
-          iconSize: 40,
+          iconSize: 20,
           fixedColor: Colors.greenAccent,
-          // type: BottomNavigationBarType.shifting,
+          type: BottomNavigationBarType.fixed, // 配置底部tabs可以有多个按钮
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
@@ -52,6 +56,18 @@ class _TabsState extends State<Tabs> {
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
               title: Text('首页'),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              title: Text('个人中心1'),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.message),
+              title: Text('消息1'),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              title: Text('首页1'),
             ),
           ],
         ),
