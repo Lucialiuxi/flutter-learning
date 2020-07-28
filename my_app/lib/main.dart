@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 // import 'customApp.dart';
 // import './state/index.dart';
 // import './bottomNavigationBar/two.dart';
-import './bottomNavigationBar/tabs.dart';
+// import './bottomNavigationBar/tabs.dart';
+import './routes/one.dart';
 
 void main() {
   runApp(
@@ -13,7 +14,8 @@ void main() {
       // home: CustomApp(),
       // home: HomeAboutState(),
       // home: BottomNavigationBar1(),
-      home: Tabs(),
+      // home: Tabs(),
+      home: PageJumpOne(),
     ),
   );
 }
