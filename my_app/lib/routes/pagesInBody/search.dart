@@ -14,7 +14,12 @@ class SearchPageInBody extends StatelessWidget {
         ),
         body: Container(
           child: Center(
-            child: Text('Search组件'),
+            child: RaisedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text('前往 home首页'),
+            ),
           ),
         ),
       ),
