@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 // import './state/index.dart';
 // import './bottomNavigationBar/two.dart';
 // import './bottomNavigationBar/tabs.dart';
-import './routes/one.dart';
-import './routes1/pagesInBody/search.dart';
-import './routes1/pagesInBody/settingItem.dart';
+import './routesExample/one.dart';
+import './routesHaveName/pagesInBody/search.dart';
+import './routesHaveName/pagesInBody/settingItem.dart';
+import './routes/Routes.dart';
 
 void main() {
   runApp(RouteApp());
@@ -27,26 +28,7 @@ class RouteApp extends StatelessWidget {
       // home: BottomNavigationBar1(),
       // home: Tabs(),
       home: PageJumpOne(),
-      onGenerateRoute: (RouteSettings settings) {
-        final String name = settings.name;
-        final Function pageContentBuilder = this.routes[name];
-        if (pageContentBuilder != null) {
-          if (settings.arguments != null) {
-            final Route route = MaterialPageRoute(
-              builder: (context) => pageContentBuilder(
-                context,
-                arguments: settings.arguments,
-              ),
-            );
-            return route;
-          } else {
-            final Route route = MaterialPageRoute(
-              builder: (context) => pageContentBuilder(context),
-            );
-            return route;
-          }
-        }
-      },
+      onGenerateRoute: onGenerateRoute,
     );
   }
 }

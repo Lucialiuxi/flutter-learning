@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../consts/listData.dart';
-import './settingItem.dart';
 
 class SettingPageInBody extends StatefulWidget {
   SettingPageInBody({Key key}) : super(key: key);
@@ -19,9 +18,11 @@ class _SettingPageInBodyState extends State<SettingPageInBody> {
       title: Text(title),
       subtitle: Text(author),
       onTap: () {
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => SettingItem(arguments: listData[index]),
-        ));
+        Navigator.pushNamed(
+          context,
+          './settingItem',
+          arguments: listData[index],
+        );
       },
     );
   }
