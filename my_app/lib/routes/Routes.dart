@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import '../routesHaveName/pagesInBody/search.dart';
 import '../routesHaveName/pagesInBody/settingItem.dart';
+import '../routesHaveName/one.dart';
 
 final routes = {
+  '/': (context) => PageJumpOne(),
   '/search': (context) => SearchPageInBody(),
   '/settingItem': (context, {arguments}) => SettingItem(arguments: arguments),
 };

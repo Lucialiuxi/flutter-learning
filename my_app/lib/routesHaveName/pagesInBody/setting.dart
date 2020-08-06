@@ -20,7 +20,7 @@ class _SettingPageInBodyState extends State<SettingPageInBody> {
       onTap: () {
         Navigator.pushNamed(
           context,
-          './settingItem',
+          '/settingItem',
           arguments: listData[index],
         );
       },
