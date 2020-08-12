@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 // import 'customApp.dart';
 // import './state/index.dart';
 // import './bottomNavigationBar/two.dart';
-import './bottomNavigationBar/tabs.dart';
-// import './routesExample/one.dart';
-// import './routesHaveName/pagesInBody/search.dart';
-// import './routesHaveName/pagesInBody/settingItem.dart';
+// import './bottomNavigationBar/tabs.dart';
+import './routesHaveName/one.dart';
+import './routesHaveName/pagesInBody/search.dart';
+import './routesHaveName/pagesInBody/settingItem.dart';
 import './routes/Routes.dart';
 
 void main() {
@@ -26,6 +26,7 @@ class RouteApp extends StatelessWidget {
       // home: PageJumpOne(),
       initialRoute: '/', // 初始化要加载的路由
       onGenerateRoute: onGenerateRoute,
+      routes: routes,
     );
   }
 }

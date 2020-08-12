@@ -10,6 +10,8 @@ final routes = {
 };
 
 var onGenerateRoute = (RouteSettings settings) {
+  print('RouteSettings----');
+  print(RouteSettings);
   final String name = settings.name;
   final Function pageContentBuilder = routes[name];
   if (pageContentBuilder != null) {
@@ -20,12 +22,21 @@ var onGenerateRoute = (RouteSettings settings) {
           arguments: settings.arguments,
         ),
       );
+      print('11111111---');
+      print(route);
       return route;
     } else {
       final Route route = MaterialPageRoute(
         builder: (context) => pageContentBuilder(context),
       );
+      print('2222222---');
+      print(route);
       return route;
     }
   }
+  return MaterialPageRoute(
+    builder: (context) => Scaffold(
+      body: Center(child: Text('No route defined for ${settings.name}')),
+    ),
+  );
 };
