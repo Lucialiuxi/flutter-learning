@@ -34,9 +34,5 @@ var onGenerateRoute = (RouteSettings settings) {
       return route;
     }
   }
-  return MaterialPageRoute(
-    builder: (context) => Scaffold(
-      body: Center(child: Text('No route defined for ${settings.name}')),
-    ),
-  );
+  return null;
 };
