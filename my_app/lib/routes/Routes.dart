@@ -10,10 +10,11 @@ final routes = {
 };
 
 var onGenerateRoute = (RouteSettings settings) {
-  print('RouteSettings----');
-  print(RouteSettings);
   final String name = settings.name;
   final Function pageContentBuilder = routes[name];
+  print('打印打印打印r');
+  print(settings.name);
+  print(pageContentBuilder);
   if (pageContentBuilder != null) {
     if (settings.arguments != null) {
       final Route route = MaterialPageRoute(
@@ -22,17 +23,12 @@ var onGenerateRoute = (RouteSettings settings) {
           arguments: settings.arguments,
         ),
       );
-      print('11111111---');
-      print(route);
       return route;
     } else {
       final Route route = MaterialPageRoute(
         builder: (context) => pageContentBuilder(context),
       );
-      print('2222222---');
-      print(route);
       return route;
     }
   }
-  return null;
 };

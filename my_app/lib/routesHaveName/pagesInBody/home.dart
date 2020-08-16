@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './search.dart';
+// import './search.dart';
 
 class HomePageInBody extends StatefulWidget {
   HomePageInBody({Key key}) : super(key: key);
@@ -29,11 +29,6 @@ class _HomePageInBodyState extends State<HomePageInBody> {
             RaisedButton(
               child: Text('跳转到 search 页面'),
               onPressed: () {
-                // Navigator.of(context).push(
-                //   MaterialPageRoute(builder: (BuildContext context) {
-                //     return SearchPageInBody();
-                //   }),
-                // );
                 Navigator.pushNamed(context, './search');
               },
             ),
