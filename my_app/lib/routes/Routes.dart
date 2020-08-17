@@ -12,9 +12,6 @@ final routes = {
 var onGenerateRoute = (RouteSettings settings) {
   final String name = settings.name;
   final Function pageContentBuilder = routes[name];
-  print('打印打印打印r');
-  print(settings.name);
-  print(pageContentBuilder);
   if (pageContentBuilder != null) {
     if (settings.arguments != null) {
       final Route route = MaterialPageRoute(
