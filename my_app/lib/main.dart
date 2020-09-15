@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './routesExample1/home.dart';
+import './routesExample1/tab.dart';
 import './routesExample1/product.dart';
 import './routesExample1/productDetail.dart';
 
@@ -9,7 +9,7 @@ void main() {
 
 class RouteApp extends StatelessWidget {
   final routes = {
-    '/': (context) => HomePage(),
+    '/': (context) => TabPage(),
     '/product': (context) => ProductPage(),
     '/productDetail': (context) => ProductDetail(),
   };
