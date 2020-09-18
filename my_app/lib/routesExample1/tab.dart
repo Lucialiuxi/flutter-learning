@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import './home.dart';
-import './setting.dart';
+import 'uniqueKey.dart';
 import './private.dart';
+import './globalKey.dart';
 
 class TabPage extends StatefulWidget {
   TabPage({Key key}) : super(key: key);
@@ -15,8 +16,9 @@ class _TabPageState extends State<TabPage> {
 
   List _pageList = [
     HomePage(),
-    SettingTab(),
-    PrivateCenter(),
+    Screen(),
+    SwitcherScreen(),
+    // PrivateCenter(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -46,9 +48,13 @@ class _TabPageState extends State<TabPage> {
             title: Text('分类'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business_center),
-            title: Text('个人中心'),
+            icon: Icon(Icons.golf_course),
+            title: Text('分类1'),
           ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.business_center),
+          //   title: Text('个人中心'),
+          // ),
         ],
       ),
     );
