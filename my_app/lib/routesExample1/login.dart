@@ -52,12 +52,30 @@ class _LoginPageState extends State<LoginPage> {
                         return null;
                       },
                     ),
-                    RaisedButton(
-                      child: Text('登陆'),
-                      onPressed: () {
-                        print('点击登陆按钮');
-                      },
-                    )
+                    Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          RaisedButton(
+                            color: Colors.blue,
+                            textColor: Colors.white,
+                            child: Text('登陆'),
+                            onPressed: () {
+                              print('点击登陆按钮');
+                            },
+                          ),
+                          RaisedButton(
+                            color: Colors.white,
+                            textColor: Colors.blue,
+                            child: Text('注册'),
+                            onPressed: () {
+                              print('点击注册按钮');
+                            },
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),

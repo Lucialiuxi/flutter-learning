@@ -18,7 +18,7 @@ class _TabPageState extends State<TabPage> {
     HomePage(),
     Screen(),
     SwitcherScreen(),
-    // PrivateCenter(),
+    PrivateCenter(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -33,6 +33,7 @@ class _TabPageState extends State<TabPage> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: this._tabIndex,
         fixedColor: Colors.red,
+        type: BottomNavigationBarType.fixed,
         onTap: (int index) {
           setState(() {
             this._tabIndex = index;
@@ -51,10 +52,10 @@ class _TabPageState extends State<TabPage> {
             icon: Icon(Icons.golf_course),
             title: Text('分类1'),
           ),
-          // BottomNavigationBarItem(
-          //   icon: Icon(Icons.business_center),
-          //   title: Text('个人中心'),
-          // ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.business_center),
+            title: Text('个人中心'),
+          ),
         ],
       ),
     );
