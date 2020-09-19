@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key key}) : super(key: key);
@@ -9,6 +10,31 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
+
+  Future<void> showNoticeDialog(nocitceText) async {
+    return showDialog(
+      context: context,
+      barrierDismissible: true, // user must tap button!
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('提醒'),
+          content: SingleChildScrollView(
+            child: Center(
+              child: Text('$nocitceText'),
+            ),
+          ),
+          actions: [
+            FlatButton(
+              child: Text('确定'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ], // 滚动组件，防止可视区内元素放不下导致显示异常
+        );
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -61,8 +87,21 @@ class _LoginPageState extends State<LoginPage> {
                             color: Colors.blue,
                             textColor: Colors.white,
                             child: Text('登陆'),
-                            onPressed: () {
-                              print('点击登陆按钮');
+                            onPressed: () async {
+                              print('点击登陆按钮${_formKey.currentState}');
+                              SharedPreferences.setMockInitialValues({});
+                              // 获取本地缓存，查看是否登陆
+                              final perfers =
+                                  await SharedPreferences.getInstance();
+                              final isRegister = perfers.getBool('isRegister');
+                              if (isRegister == true) {
+                                Navigator.pushNamed(
+                                  context,
+                                  '/product',
+                                );
+                              } else {
+                                showNoticeDialog('未注册');
+                              }
                             },
                           ),
                           RaisedButton(
@@ -71,6 +110,10 @@ class _LoginPageState extends State<LoginPage> {
                             child: Text('注册'),
                             onPressed: () {
                               print('点击注册按钮');
+                              Navigator.pushNamed(
+                                context,
+                                '/register',
+                              );
                             },
                           ),
                         ],
